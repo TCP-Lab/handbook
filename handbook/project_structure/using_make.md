@@ -1,7 +1,7 @@
 # Using GNU Make for rebuilding projects
-![Draft](https://img.shields.io/badge/status-draft-red)
+![Ongoing](https://img.shields.io/badge/status-ongoing-orange)
 
-> This page is still a draft because I'm still writing it.
+> This page is missing some things on makefiles.
 
 ## Aim
 This page is handy when writing or reading `makefile`s for projects.
@@ -53,7 +53,7 @@ some\path\to\a\very_cool_file.txt : some_prerequisite.csv
 
 # Pro tips
 
-##### Handling variable numbers of generated files
+## Handling variable numbers of generated files
 If one of your rules generates a variable number of files, do not try to configure `make` in some magical way to have one rule per output files. Instead, group the files into a target directory, and use as an actual target for your rule a *flag* file. These files are empty, made by `touch`, and are just there as a timestamp to let `make` know when was the last time that it (re)generated the series of output files.
 
 A caveat of this is that `make` will not notice updates to the series of files in the folder. However, this scenario occurs most often when generating intermediate data files, so editing them directly should not be needed.
@@ -69,7 +69,7 @@ Example: The `make_variables.py` script makes a variable number of files in some
 ```
 The flag file needs not end up with `.flag`, but it helps to clarify its role.
 
-##### Using make and docker together
+## Using make and docker together
 Docker is the perfect complement to make. Docker ships the environment and make provides the execution. Keep these in mind when using docker and make:
 - [Read the handbook on tips for docker containers](/handbook/containerizing.md).
 - Use `CMD make .` at the end of the dockerfile to run make when the container is executed.

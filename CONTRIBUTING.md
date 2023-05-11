@@ -55,7 +55,7 @@ This renders as:
 
 - This is the next bullet point.
 
-Remember that markdown is converted to HTML for rendering. So you can actually write most HTML code in markdown and it will be rendered correctly.
+Remember that markdown is converted to HTML for rendering. So you can actually write most HTML code in markdown and it will be rendered correctly. This is essential when adding images or GIFs. Use `<img><\img>` tags to include your images. GitHub does not like large images in repositories, so upload them to some third-party host and add a link to the raw image for now.
 
 ## What to write in the handbook
 
@@ -76,6 +76,8 @@ Love bullet points and avoid long and boring sentences. Keep your language as ac
 
 The fact that you need to KISS does not mean being unclear or imprecise for the sake of conciseness. The final aim of the handbook is to be useful - make it so.
 
+Do **not** use or reuse acronyms without defining them first. Use them sparingly.
+
 ### Rule 2 - Remember where you are at
 If you are drafting a brand-new page, include at the top of the page the status of the page with a meaningful shields.io badge:
 
@@ -87,10 +89,15 @@ If you're drafting, a link to the relevant drafting issue(s) (if any) is also us
 
 > NOTICE: Your noticing of this notice was noted.
 
-### Rule 3 - There's only fun here
+### Rule 3 - Be opinionated
+Do not worry about being opinionated. This is **the** place to have opinions. You know that a tool is better that another? Suggest its use. You think that a popular workflow sucks? Say so, and propose alternatives.
+
+If you do not agree with something that is written in the handbook, [open an issue](https://github.com/CMA-Lab/Handbook/issues) and say your take on it. This is how we grow and develop the handbook.
+
+### Rule 4 - There's only fun here
 This handbook should be useful, correct and concise, but there is no need to be overly formal. Keep those for boring people and meetings.
 
-You can, and should, use emojis (copy-paste them) and gifs (see the section below) when appropriate (which means basically anywhere you like).
+You can, and should, use emojis (copy-paste them) and gifs when appropriate (which means basically anywhere you like).
 
 # Make it so
 Now go, write the handbook, and make it so.

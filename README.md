@@ -10,3 +10,8 @@ This is a collection of a series of documents aimed as a reference for routine t
 The Handbook is not meant to be read top-to-bottom, but navigated to the topic that you are interested of the most.
 
 For a guide on how to write the handbook, and more information on how you can contribute, see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+## We are not alone in here...
+
+This is not the first handbook of its kind, of course. Other very useful online resources are:
+- [The Turing Way](https://the-turing-way.netlify.app/index.html): The handbook for reproducible, ethical and collaborative data science. Many handbook pages are written with it in mind.
