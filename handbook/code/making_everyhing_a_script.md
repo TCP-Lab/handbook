@@ -1,4 +1,5 @@
-# Making everything a script
+# Modularizing everything
+> How to convert loose scripts into reusable scripts.
 ![Draft](https://img.shields.io/badge/status-draft-red)
 
 > This page is still a draft because I'm still writing it.

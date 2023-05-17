@@ -1,5 +1,5 @@
-# Page title
-> How to write pages in the Handbook.
+# Python Snippets
+> Useful, copy-pastable python snippets and how to use them.
 ![Draft](https://img.shields.io/badge/status-draft-red)
 
 > This page is still a draft because I'm still writing it.

@@ -1,4 +1,5 @@
 # Structuring Bioinformatics Projects
+> How to structure the filesystem of a bioinformatics project.
 ![Draft](https://img.shields.io/badge/status-draft-red)
 
 > This page is still a draft because I'm still writing it.

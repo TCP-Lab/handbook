@@ -1,4 +1,5 @@
 # Writing Python
+> How to write and style python code.
 ![Draft](https://img.shields.io/badge/status-draft-red)
 
 > This page is still a draft because I'm still writing it.

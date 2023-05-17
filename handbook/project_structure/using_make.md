@@ -1,4 +1,5 @@
 # Using GNU Make for rebuilding projects
+> How to use `make` to automate project execution.
 ![Ongoing](https://img.shields.io/badge/status-ongoing-orange)
 
 > This page is missing some things on makefiles.
