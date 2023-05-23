@@ -24,6 +24,9 @@ def main(file_to_update: Path, handbook_dir: Path, dry_run: bool) -> None:
     if file_to_update.exists():
         with file_to_update.open("r") as stream:
             for line in stream:
+                # TODO: It would be nice to add some heuristic to this, so that
+                # the title could be something different than this string.
+                # Maybe detect the starting # + the word 'index'?
                 if line.startswith("## The Index"):
                     break
                 index_intro.append(line)

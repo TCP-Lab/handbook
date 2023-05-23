@@ -1,0 +1,9 @@
+repos:
+- repo: local
+  hooks:
+    - id: index-regeneration
+      name: index-regeneration
+      entry: scripts/walk_index
+      language: python
+      args: ["./handbook"]
+      types: ["markdown"]
