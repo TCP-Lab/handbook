@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
-if [ ! $# -eq 1 ]; then
+if [ $# -lt 1 ]; then
     echo "Usage: walk_index [DIR]"
     echo ""
     echo "Walk DIR and run generate_index.py on every README.md found"
 
-    exit 0
+    exit 22
+elif [ $# -gt 1 ]; then
+    echo "Warning: Ignoring extra arguments: ${@:2}"
 fi
 
 files=$(find $1 -type f | grep README.md)

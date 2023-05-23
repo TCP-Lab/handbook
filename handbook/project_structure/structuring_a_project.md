@@ -9,3 +9,5 @@ This page aims to describe how to structure a project
 
 ## Also Read
 - [Python Command Line Tools](/handbook/writing_code/python_tools.md): How to write Python Command Line Tools.
+
+Wow! How nice.

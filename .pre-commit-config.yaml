@@ -4,6 +4,7 @@ repos:
     - id: index-regeneration
       name: index-regeneration
       entry: scripts/walk_index
-      language: python
+      language: script
       args: ["./handbook"]
       types: ["markdown"]
+      pass_filenames: false
