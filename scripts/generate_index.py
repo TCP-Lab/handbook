@@ -29,7 +29,7 @@ def main(file_to_update: Path, handbook_dir: Path, dry_run: bool) -> None:
                 index_intro.append(line)
     
     # Walk in the dirs to regen the index
-    index_line_template = "- [{title}](.\{file_path}): {description}"
+    index_line_template = "- [{title}](/{file_path}): {description}"
     index_lines = ["## The Index"]
 
     for path in handbook_dir.rglob("*.md"):
