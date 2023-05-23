@@ -2,5 +2,6 @@
 
 These pages cover how to structure, plan and execute a project.
 
-## Index
-- [Using Make](./using_make.md): This page is handy when writing or reading `makefile`s for projects.
+## The Index
+- [Using GNU Make for rebuilding projects](/handbook/project_structure/using_make.md): How to use `make` to automate project execution.
+- [Structuring Bioinformatics Projects](/handbook/project_structure/structuring_a_project.md): How to structure the filesystem of a bioinformatics project.
