@@ -12,6 +12,19 @@ This might be your first time contributing to something on GitHub. Don't worry, 
 - GitHub's own [quickstart guide](https://docs.github.com/en/get-started/quickstart/hello-world), especially the section on [contributing to a project](https://docs.github.com/en/get-started/quickstart/contributing-to-projects);
 - Try to contribute to [this project](https://github.com/firstcontributions/first-contributions) to actually do a first contribution and see how it's done.
 
+## Pre-commit
+A pre-commit hook is available to regenerate the index files when you commit, so
+you don't have to do it manually. Just follow these easy steps to set it up:
+- Install [Python](https://www.python.org/) and be sure that you can call the `python` and `pip` commands from the command line (i.e. that they are in your `PATH`);
+- Install [pre-commit](https://pre-commit.com/#install), usually just `pip install pre-commit` (i suggest installing it *outside* a virtual environment);
+- `cd` into the repository root (where the `.pre-commit-config.yaml`) file is;
+- Run `pre-commit install`.
+- You're done!
+
+When you commit, pre-commit will run, and update the indexes as needed. If it needs to update some files, it will abort the commit (so you can inspect what it did). It is (usually) safe to run `git add . && !!` to add all changes and commit again - the pre-commit will run again, change no file, and allow you to commit the updated files.
+
+More information [can be found in the pre-commit documentation](https://pre-commit.com/#usage).
+
 ## Recognizing contributions
 If you contributed to the handbook, you'll be credited at the bottom of the main [README.md](README.md) file. If you contributed but you're not included, [open an issue](https://github.com/CMA-Lab/Handbook/issues) - feel free to scold us.
 
@@ -68,6 +81,8 @@ There is a general template for new pages. You can copy-paste it from [the page 
 The handbook is made up of several **pages**. Each page has its own `.md` file.
 The `handbook` folder is the start of the handbook. The `README.md` of that folder contains the index of the handbook.
 Every subfolder in `handbook/` is a **binder**. Binders bind bound pages, grouping them in topics. The `README.md` for each binder contains the topic and a binder-specific index.
+
+Each page in the handbook **MUST** follow the structure in the [`TEMPLATE.md`](TEMPLATE.md) file in the root of the repository. This is needed to automatically regenerate the index files around the folders with the new pages.
 
 ### Rule 1 - Keep it simple, stupid
 If you are writing a page in the handbook, keep it simple and concise. Include links to external resources if possible but always describe why the link is there - remember that this is not a wiki.
