@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if [ ! $# -eq 1 ]; then
+    echo "Usage: walk_index [DIR]"
+    echo ""
+    echo "Walk DIR and run generate_index.py on every README.md found"
+
+    exit 0
+fi
+
+files=$(find $1 -type f | grep README.md)
+
+for file in $files; do
+    echo "Regenerating $file ..."
+    python ./scripts/generate_index.py $file $(dirname $file)
+done
