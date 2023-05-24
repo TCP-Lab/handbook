@@ -1,6 +1,7 @@
 ---
 title: "Making Everything a Script"
 weight: 1
+desc: "How to convert loose scripts into reusable scripts."
 ---
 
 # Modularizing everything

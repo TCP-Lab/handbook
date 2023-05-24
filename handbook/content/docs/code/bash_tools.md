@@ -1,6 +1,7 @@
 ---
 title: "Bash Tools"
 weight: 1
+desc: "The most common and useful bash tools."
 ---
 
 # Bash Tools

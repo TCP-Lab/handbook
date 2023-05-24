@@ -1,6 +1,7 @@
 ---
 title: "GNU make"
 weight: 1
+desc: "How to use `make` to automate project execution."
 ---
 
 # Using GNU Make for rebuilding projects

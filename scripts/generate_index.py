@@ -1,25 +1,40 @@
 from pathlib import Path
 from copy import copy
+import sys
+
+from yaml import load, Loader
 
 class PageGobbler:
     def __init__(self) -> None:
-        self.title = None
-        self.description = None
-        self.gobbled_lines = 0
+        self.raw_yaml = []
+        self.gobbling = False
+        self.data = None
 
     def gobble(self, line: str) -> None:
-        self.gobbled_lines += 1
-
-        if line.startswith("> ") and self.gobbled_lines == 2:
-            self.description = line.lstrip(">").strip()
-
-        if line.startswith("# ") and self.gobbled_lines == 1:
-            self.title = line.lstrip("#").strip()
+        if line.startswith("---") and not self.gobbling:
+            self.gobbling = True
             return
         
-
-def main(file_to_update: Path, handbook_dir: Path, dry_run: bool) -> None:
+        if line.startswith("---") and self.gobbling:
+            self.gobbling = False
+            self.flush()
+            return
+        
+        if self.gobbling:
+            self.raw_yaml.append(line)
     
+    def flush(self) -> None:
+        yaml = "\n".join(self.raw_yaml)
+
+        self.data = load(yaml, Loader)
+
+def main(file_to_update: Path, target_dir: Path, dry_run: bool) -> None:
+
+    if not target_dir.exists():
+        # I don't raise anything as this error is "handled"
+        print(f"Error: Target directory '{target_dir}' does not exist.")
+        sys.exit(1)
+
     index_intro = []
     if file_to_update.exists():
         with file_to_update.open("r") as stream:
@@ -35,8 +50,14 @@ def main(file_to_update: Path, handbook_dir: Path, dry_run: bool) -> None:
     index_line_template = "- [{title}](/{file_path}): {description}"
     index_lines = ["## The Index"]
 
-    for path in handbook_dir.rglob("*.md"):
-        if path.name.lower() == "readme.md":
+    paths = list(target_dir.rglob("*.md"))
+
+    if not paths:
+        print("Found to matching files to index. Returning with error.")
+        sys.exit(1)
+
+    for path in paths:
+        if path.name.lower() == "_index.md":
             continue
         gobbler = PageGobbler()
         with path.open("r") as stream:
@@ -44,9 +65,9 @@ def main(file_to_update: Path, handbook_dir: Path, dry_run: bool) -> None:
                 gobbler.gobble(line)
         line = copy(index_line_template)
         line = line.format(
-            title = gobbler.title,
+            title = gobbler.data.get("title"),
             file_path = path,
-            description = gobbler.description
+            description = gobbler.data.get("desc", "No description provided")
         )
         index_lines.append(line)
     

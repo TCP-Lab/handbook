@@ -3,6 +3,7 @@
 # Full reference: https://github.com/alex-shpak/hugo-book/tree/master#page-configuration
 title: "Template Page" # The page title. Will show up in the index only
 weight: 1 # Pages with more weight will show up higher in the index. Pages with the same weight are ordered alphabetically
+desc: "A nice template page" # The description to be used in the index files.
 
 # Optional:
 #bookCollapseSection: true # Will collapse other pages in this section. Useful in _index.md pages

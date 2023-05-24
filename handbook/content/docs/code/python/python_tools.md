@@ -1,6 +1,7 @@
 ---
 title: "Python CLI Tools"
 weight: 1
+desc: "How to (quickly) write neat, clean command line tools in Python."
 ---
 
 # Making Python command-line tools

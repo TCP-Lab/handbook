@@ -1,6 +1,7 @@
 ---
 title: "Python Snippets"
 weight: 1
+desc: "Useful, copy-pastable python snippets and how to use them."
 ---
 
 # Python Snippets

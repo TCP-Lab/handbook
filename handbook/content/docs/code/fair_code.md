@@ -1,6 +1,7 @@
 ---
 title: "FAIR Code"
 weight: 1
+desc: "How to make your code FAIR by design, and how it helps you write better code."
 ---
 
 # FAIR Code

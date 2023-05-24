@@ -1,6 +1,7 @@
 ---
 title: "Version Control"
 weight: 1
+desc: "How to use `git` and `github` to version control code and papers"
 ---
 
 # Version Control

@@ -1,6 +1,8 @@
-+++
-title = "Data Formats"
-+++
+---
+title: "Data Formats"
+weight: 1
+desc: "What data formats should be preferred for what type of data."
+---
 
 # Data Formats
 *What data formats should be preferred for what type of data.*

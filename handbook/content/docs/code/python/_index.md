@@ -7,15 +7,12 @@ bookCollapseSection: true
 # Writing Python
 *How to write and style python code.*
 
-![Draft](https://img.shields.io/badge/status-draft-red)
-
-{{< hint warning >}}
-This page is still a draft because I'm still writing it.
-{{< /hint >}}
-
-## Aim
-This page aims to describe the best practices while writing and structuring python code.
+These pages cover best practices while writing python code, and some tips and tricks.
 
 ## Also Read
 This does *not* cover python projects (i.e. the infrastructure around the code):
 - For Command Line Tools, read '[Python Tools](./python_tools.md)'.
+
+## The Index
+- [Python CLI Tools](/handbook/content/docs/code/python/python_tools.md): How to (quickly) write neat, clean command line tools in Python.
+- [Python Snippets](/handbook/content/docs/code/python/python_snippets.md): Useful, copy-pastable python snippets and how to use them.

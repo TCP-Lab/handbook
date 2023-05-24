@@ -1,6 +1,7 @@
 ---
 title: "Containerizing with Docker"
-weight: 2
+weight: 1
+desc: "How to use Docker and Containers to allow better code reuse and reproducibility."
 ---
 
 # Containerizing with Docker

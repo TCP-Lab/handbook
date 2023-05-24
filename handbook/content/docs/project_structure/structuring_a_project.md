@@ -1,12 +1,17 @@
 ---
 title: "Structuring Bioinformatics Projects"
+weight: 1
+desc: "How to structure the filesystem of a bioinformatics project."
 ---
 
 # Structuring Bioinformatics Projects
-> How to structure the filesystem of a bioinformatics project.
+*How to structure the filesystem of a bioinformatics project.*
+
 ![Draft](https://img.shields.io/badge/status-draft-red)
 
-> This page is still a draft because I'm still writing it.
+{{< hint warning >}}
+This page is still a draft because I'm still writing it.
+{{< /hint >}}
 
 ## Aim
 This page aims to describe how to structure a project 
