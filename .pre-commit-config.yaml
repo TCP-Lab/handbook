@@ -4,8 +4,10 @@ repos:
     - id: index-regeneration
       name: Regenerate Handbook Indexes
       entry: scripts/walk_index
-      language: script
+      language: python
       args: ["./handbook/content/docs"]
       files: ^handbook/content/docs/
       types: ["markdown"]
       pass_filenames: false
+      additional_dependencies: ['PyYAML==6.0']
+  
