@@ -1,7 +1,7 @@
 # Hedmad's Handbook of Nice and Practical Tips
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
-<img align="right" src="https://media1.giphy.com/media/xT77Y1T0zY1gR5qe5O/giphy.gif?cid=ecf05e47lfank70znj33ryx22ecv8dsshwjgazs3io99dw83&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="An animated, stylized book which flips its pages endlessly on its own." width=250>
+<img align="right" src="https://github.com/MrHedmad/Handbook/blob/main/handbook/static/book_flipping_gray.gif?raw=true" alt="An animated, stylized book which flips its pages endlessly on its own." width=250>
 
 Welcome to the GitHub repository for Hedmad's Handbook of Nice and Practical Tips! 📖
 
