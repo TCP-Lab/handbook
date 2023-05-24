@@ -1,8 +1,16 @@
+---
+title: "Python CLI Tools"
+weight: 1
+---
+
 # Making Python command-line tools
-> How to (quickly) write command line tools in Python.
+*How to (quickly) write neat, clean command line tools in Python.*
+
 ![Draft](https://img.shields.io/badge/status-draft-red)
 
-> This page is still a draft because I'm still writing it.
+{{< hint warning >}}
+This page is still a draft because I'm still writing it.
+{{< /hint >}}
 
 ## Aim
 This page aims to describe how to make command-line tools in python, covering how to package, configure and deploy them. It does not aim to cover how to package a python project. See "Also Read" below.

@@ -1,3 +1,7 @@
+---
+title: "Structuring Bioinformatics Projects"
+---
+
 # Structuring Bioinformatics Projects
 > How to structure the filesystem of a bioinformatics project.
 ![Draft](https://img.shields.io/badge/status-draft-red)

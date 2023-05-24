@@ -1,8 +1,16 @@
+---
+title: "GNU make"
+weight: 1
+---
+
 # Using GNU Make for rebuilding projects
-> How to use `make` to automate project execution.
+*How to use `make` to automate project execution.*
+
 ![Ongoing](https://img.shields.io/badge/status-ongoing-orange)
 
-> This page is missing some things on makefiles.
+{{< hint warning >}}
+This page is missing best practices on how to write makefiles.
+{{< /hint >}}
 
 ## Aim
 This page is handy when writing or reading `makefile`s for projects.

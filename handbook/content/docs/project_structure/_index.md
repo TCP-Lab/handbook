@@ -1,3 +1,9 @@
+---
+title: "Project Structure"
+weight: 1
+bookCollapseSection: true
+---
+
 # Project Structure
 
 These pages cover how to structure, plan and execute a project.

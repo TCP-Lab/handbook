@@ -1,8 +1,16 @@
+---
+title: "Bash Tools"
+weight: 1
+---
+
 # Bash Tools
-> The most common and useful bash tools.
+*The most common and useful bash tools.*
+
 ![Draft](https://img.shields.io/badge/status-draft-red)
 
-> This page is still a draft because I'm still writing it.
+{{< hint warning >}}
+This page is still a draft because I'm still writing it.
+{{< /hint >}}
 
 ## Aim
 This page aims to list useful bash tools as well as their most common use cases.
