@@ -21,5 +21,5 @@ files=$(find . -type f | grep _index.md)
 
 for file in $files; do
     echo "Regenerating $file ..."
-    python $PYS $file $(dirname $file) --dry-run
+    python $PYS $file $(dirname $file)
 done
