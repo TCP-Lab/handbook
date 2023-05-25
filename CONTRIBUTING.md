@@ -5,7 +5,7 @@ If you're reading this you are either a CMA-Lab member or someone from the Inter
 
 If you like the handbook, drop a star! It really helps with my mental health.
 
-Remember to be nice, and follow CMA-Lab's [Code of Conduct](https://github.com/CMA-Lab/.github/blob/main/CODE_OF_CONDUCT.md). We want to build a nice community around the Handbook. Keep that in mind!
+Remember to be nice, and follow the [Code of Conduct](/CODE_OF_CONDUCT.md). We want to build a nice community around the Handbook. Keep that in mind!
 
 > **In contrast with other pages, this guide is meant to be read top-to-bottom, so no index for you!**
 
@@ -46,19 +46,24 @@ There is a general template for new pages. You can copy-paste it from [the page 
 ## How to write the handbook
 
 The handbook is made up of several **pages**. Each page has its own `.md` file.
-The `handbook` folder is the start of the handbook. The `README.md` of that folder contains the index of the handbook.
-Every subfolder in `handbook/` is a **binder**. Binders bind bound pages, grouping them in topics. The `README.md` for each binder contains the topic and a binder-specific index.
+Pages are stored in the `handbook/content/docs/` folder. Every subfolder in `docs/` is a **chapter**. Chapters group pages in the same topics. The side menu follows closely the structure of the directories in the handbook. The `_index.md` files are the pages shown when the folder (i.e. the chapter) itself is accessed. They contain the index of the specific folder, plus a description of the chapter. The `/handbook/content/_index.md` file is the landing page of the book.
 
-Each page in the handbook **MUST** follow the structure in the [`TEMPLATE.md`](TEMPLATE.md) file in the root of the repository. This is needed to automatically regenerate the index files around the folders with the new pages.
+Each page in the handbook **MUST** follow the structure in the [`TEMPLATE.md`](TEMPLATE.md) file in the root of the repository. This is needed to correctly build the pages with HUGO and regenerate the indexes (i.e. the `desc` field is not required by HUGO but required by the indexes).
 
-### GitHub Flavored Markdown quickstart
+### Markdown quickstart
 The handbook is written in GitHub-flavoured Markdown:
 - [Markdown basics for the non-believers](https://www.markdownguide.org/basic-syntax/)
 - [Github's guide on its own markdown format](https://github.github.com/gfm/#what-is-github-flavored-markdown-)
 
 Note that Github's markdown is used everywhere - in `.md` files, in comments, issues, pull requests, etc...
 
-Links are written as `[link text](link)`. Links to pages in the handbook can be given relative to the current file (`handbook/README.md`) or absolute (`/CONTRIBUTING.md`, note the starting `/`). Github handles making them point to the correct files in the correct branches.
+Links are written as `[link text](link)`. Links to pages in the handbook must be given relative to the root of the website, which is `/docs/` for mort pages. So, a link could look like:
+
+```
+[click me!](/docs/project_structure/using_make.md)
+```
+
+HUGO and the theme handles making them point to the correct rendered pages.
 
 In triple-backtick code blocks, remember to specify the language of your code block to allow for the correct syntax highlighting. See [this guide](https://github.com/jincheng9/markdown_supported_languages) to see a list of supported languages.
 
@@ -82,6 +87,8 @@ This renders as:
 - This is the next bullet point.
 
 Remember that markdown is converted to HTML for rendering. So you can actually write most HTML code in markdown and it will be rendered correctly. This is essential when adding images or GIFs. Use `<img><\img>` tags to include your images. GitHub does not like large images in repositories, so upload them to some third-party host and add a link to the raw image for now.
+
+HUGO supports *shortcodes* to use instead of large HTML chunks. The `book` theme that the Handbook uses supports a few of its own. From the [documentation for the theme](https://github.com/alex-shpak/hugo-book#shortcodes)
 
 
 ### Rule 1 - Keep it simple, stupid

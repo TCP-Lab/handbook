@@ -81,7 +81,7 @@ The flag file needs not end up with `.flag`, but it helps to clarify its role.
 ]
 ## Using make and docker together
 Docker is the perfect complement to make. Docker ships the environment and make provides the execution. Keep these in mind when using docker and make:
-- [Read the handbook on tips for docker containers](/handbook/containerizing.md).
+- [Read the handbook on tips for docker containers](docs/miscellaneous/containerizing.md).
 - Use `CMD make .` at the end of the dockerfile to run make when the container is executed.
 - To use Python virtual environments, make a rule that generates the virtual environment, and then source it at every rule that needs it. Remember to use bind commands with `;`, since every line in a rule body is run in a new shell:
 

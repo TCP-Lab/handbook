@@ -4,6 +4,7 @@
 title: "Template Page" # The page title. Will show up in the index only
 weight: 1 # Pages with more weight will show up higher in the index. Pages with the same weight are ordered alphabetically
 desc: "A nice template page" # The description to be used in the index files.
+draft: true # If this is true, the page will not be included in the live site or the indexes.
 
 # Optional:
 #bookCollapseSection: true # Will collapse other pages in this section. Useful in _index.md pages
@@ -24,4 +25,4 @@ This page is still a draft because I'm still writing it.
 This page aims to describe a template for the various pages in the handbook. Write a few lines on why you would want to read this page.
 
 ## Also Read
-- [Some Other](/CONTRIBUTING.md): Some other useful page. 
+- [Some Other](/CONTRIBUTING.md): Some other useful page.

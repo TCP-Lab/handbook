@@ -10,9 +10,16 @@ elif [ $# -gt 1 ]; then
     echo "Warning: Ignoring extra arguments: ${@:2}"
 fi
 
-files=$(find $1 -type f | grep _index.md)
+PYS="$(dirname $0)/generate_index.py"
+PYS=$(realpath $PYS)
+
+echo $PYS
+
+cd $(dirname $1)
+
+files=$(find . -type f | grep _index.md)
 
 for file in $files; do
     echo "Regenerating $file ..."
-    python ./scripts/generate_index.py $file $(dirname $file)
+    python $PYS $file $(dirname $file) --dry-run
 done

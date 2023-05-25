@@ -7,7 +7,7 @@ Welcome to the GitHub repository for Hedmad's Handbook of Nice and Practical Tip
 
 This repository hosts the actual raw code used to build the handbook's website. The build engine is [HUGO](https://gohugo.io/), and the theme is the beautiful [Hugo Book](https://github.com/alex-shpak/hugo-book/) by [Alex Shpak](https://github.com/alex-shpak).
 
-> To read the handbook, head on over to []()
+> [Click here to read the handbook!](https://mrhedmad.github.io/Handbook/).
 
 ### Citing the handbook
 If you ever need (or want) to cite us, use the following DOI:
