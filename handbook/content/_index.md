@@ -40,3 +40,14 @@ This is not the first handbook of its kind, of course. Other very useful online 
 ### Contributions
 
 Thanks to everyone who contributed to the handbook! A list of contributors can be found in the [GitHub Readme file](https://github.com/MrHedmad/Handbook).
+## The Index
+- [GNU make](/docs/project_structure/using_make.md): How to use `make` to automate project execution.
+- [Structuring Bioinformatics Projects](/docs/project_structure/structuring_a_project.md): How to structure the filesystem of a bioinformatics project.
+- [Data Formats](/docs/data/data_formats.md): What data formats should be preferred for what type of data.
+- [Bash Tools](/docs/code/bash_tools.md): The most common and useful bash tools.
+- [Making Everything a Script](/docs/code/making_everyhing_a_script.md): How to convert loose scripts into reusable scripts.
+- [FAIR Code](/docs/code/fair_code.md): How to make your code FAIR by design, and how it helps you write better code.
+- [Version Control](/docs/code/version_control.md): How to use `git` and `github` to version control code and papers
+- [Python CLI Tools](/docs/code/python/python_tools.md): How to (quickly) write neat, clean command line tools in Python.
+- [Python Snippets](/docs/code/python/python_snippets.md): Useful, copy-pastable python snippets and how to use them.
+- [Containerizing with Docker](/docs/miscellaneous/containerizing.md): How to use Docker and Containers to allow better code reuse and reproducibility.

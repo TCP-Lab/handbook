@@ -9,5 +9,5 @@ bookCollapseSection: true
 These pages cover how to structure, plan and execute a project.
 
 ## The Index
-- [GNU make](/handbook/content/docs/project_structure/using_make.md): How to use `make` to automate project execution.
-- [Structuring Bioinformatics Projects](/handbook/content/docs/project_structure/structuring_a_project.md): How to structure the filesystem of a bioinformatics project.
+- [GNU make](/docs/project_structure/using_make.md): How to use `make` to automate project execution.
+- [Structuring Bioinformatics Projects](/docs/project_structure/structuring_a_project.md): How to structure the filesystem of a bioinformatics project.
