@@ -15,7 +15,7 @@ This handbook aims to:
 - Provide **practical guidelines** on how to follow [FAIR data](https://www.nature.com/articles/sdata201618) and [code](https://faircode.io/) principles.
 - Serve as a discussion hub for all the above through GitHub's collaboration features.
 
-The Handbook is not meant to be read top-to-bottom, but navigated to the topic that you are interested of the most. Use the sidebar index to quickly jump to what interests you the most.
+The Handbook is not meant to be read top-to-bottom, but navigated to the topic that you are interested of the most. Use the sidebar index to quickly jump to what page you'd like to read.
 
 ## Contributing to the handbook
 
