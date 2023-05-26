@@ -40,6 +40,7 @@ This is not the first handbook of its kind, of course. Other very useful online 
 ### Contributions
 
 Thanks to everyone who contributed to the handbook! A list of contributors can be found in the [GitHub Readme file](https://github.com/MrHedmad/Handbook).
+
 ## The Index
 - [GNU make](/docs/project_structure/using_make.md): How to use `make` to automate project execution.
 - [Structuring Bioinformatics Projects](/docs/project_structure/structuring_a_project.md): How to structure the filesystem of a bioinformatics project.
