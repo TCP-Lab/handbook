@@ -11,7 +11,7 @@ Welcome to [Hedmad's](https://github.com/MrHedmad) Handbook of Nice and Practica
 
 This handbook aims to:
 - Collect **useful** and **practical** day-to-day tips on how to conduct bioinformatics analyses;
-- Set **standards** for [data formats](/handbook/data/data_formats.md), [workflows](/handbook/project_structure/using_make.md), [project structure](/handbook/project_structure/structuring_a_project.md) and [code](/handbook/code/README.md);
+- Set **standards** for [data formats](docs/data/data_formats.md), [workflows](docsproject_structure/using_make.md), [project structure](docs/project_structure/structuring_a_project.md) and [code](docs/code/README.md);
 - Provide **practical guidelines** on how to follow [FAIR data](https://www.nature.com/articles/sdata201618) and [code](https://faircode.io/) principles.
 - Serve as a discussion hub for all the above through GitHub's collaboration features.
 
