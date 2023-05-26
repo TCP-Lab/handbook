@@ -67,22 +67,23 @@ HUGO and the theme handles making them point to the correct rendered pages.
 
 In triple-backtick code blocks, remember to specify the language of your code block to allow for the correct syntax highlighting. See [this guide](https://github.com/jincheng9/markdown_supported_languages) to see a list of supported languages.
 
-You can also start code blocks by prepending each line by *eight* spaces. Why? I have no idea, but it makes code blocks possible in bullet points. To annotate the language of the eight-spaces-indented code you can use this template:
-```md
+You can add code blocks in bullet points by indenting, like this:
+````md
 - This is a bullet point.
 
-    <!-- language: language-tag -->
-        code goes here
-        and here's another line
-
+    ```markdown
+    code goes here
+    and here's another line
+    ```
 - This is the next bullet point.
-```
+````
 This renders as:
 - This is a bullet point.
 
-    <!-- language: md -->
-        code goes here
-        and here's another line
+    ```markdown
+    code goes here
+    and here's another line
+    ```
 
 - This is the next bullet point.
 
@@ -104,27 +105,34 @@ Do **not** use or reuse acronyms without defining them first. Use them sparingly
 If you are drafting a brand-new page, include at the top of the page the status of the page with a meaningful shields.io badge:
 
 - If the page is completed, or in general will require little further editing to be complete, use the ![Complete](https://img.shields.io/badge/status-complete-brightgreen) tag.
-
-        ![Complete](https://img.shields.io/badge/status-complete-brightgreen)
-
+    ```markdown
+    ![Complete](https://img.shields.io/badge/status-complete-brightgreen)
+    ```
 - If the page is an ongoing effort but it is still usable, use the ![Ongoing](https://img.shields.io/badge/status-ongoing-orange) tag.
-
-        ![Ongoing](https://img.shields.io/badge/status-ongoing-orange)
-
+    ```markdown
+    ![Ongoing](https://img.shields.io/badge/status-ongoing-orange)
+    ```
 - If the page is a draft, and still requires a lot of work, or is unusable in general, use the ![Draft](https://img.shields.io/badge/status-draft-red) tag.
+    ```markdown
+    ![Draft](https://img.shields.io/badge/status-draft-red)
+    ```
 
-        ![Draft](https://img.shields.io/badge/status-draft-red)
-  
-  Do not add draft pages to the index.
+If you don't want draft pages to show up in the website at all, add the `draft: true` variable in the page's YAML header (see the [TEMPLATE](/TEMPLATE.md) file).
 
-If you're drafting, a link to the relevant drafting issue(s) (if any) is also useful. Disclaimers on top of the page (within quote blocks maybe) are also useful, like:
+If you're drafting, a link to the relevant drafting issue(s) (if any) is also useful. Disclaimers on top of the page (within blocks) are also useful, like:
 
-> HEADS UP: This page has problems. See Issue [#1](https://www.youtube.com/watch?v=dQw4w9WgXcQ) for more information.
+```
+{{< hint danger >}}
+HEADS UP: This page has problems. See Issue [#1](https://www.youtube.com/watch?v=dQw4w9WgXcQ) for more information.
+{{< /hint >}}
+```
+
+Possible `info` block levels are `info`, `warning` and `danger`.
 
 ### Rule 3 - Be opinionated
 Do not worry about being opinionated. This is **the** place to have opinions. You know that a tool is better that another? Suggest its use. You think that a popular workflow sucks? Say so, and propose alternatives.
 
-If you do not agree with something that is written in the handbook, [open an issue](https://github.com/CMA-Lab/Handbook/issues) and say your take on it. This is how we grow and develop the handbook and as researchers.
+If you do not agree with something that is written in the handbook, [open an issue](https://github.com/MrHedmad/Handbook/issues) and say your take on it. This is how we grow and develop the handbook and as researchers.
 
 ### Rule 4 - There's only fun here
 This handbook should be useful, correct and concise, but there is no need to be overly formal. Keep those for boring people and meetings.
@@ -132,7 +140,7 @@ This handbook should be useful, correct and concise, but there is no need to be 
 You can, and should, use emojis (copy-paste them) and gifs when appropriate (which means basically anywhere you like).
 
 ## Make it so
-Congratulatios on reaching the end of the contributing guide! Have a piece of cake 🍰. Now go, write the handbook, and make it so.
+Congratulations on reaching the end of the contributing guide! Have a piece of cake 🍰. Now go, write the handbook, and make it so.
 <p align="center">
 <img src="https://media4.giphy.com/media/bKnEnd65zqxfq/giphy.gif?cid=ecf05e472pjf47sr39yxkr11k56dwsczxkai5ucxndguzl3a&ep=v1_gifs_search&rid=giphy.gif&ct=g" width = 500 align="center">
 </p>
