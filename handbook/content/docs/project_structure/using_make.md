@@ -67,7 +67,18 @@ some\path\to\a\very_cool_file.txt : some_prerequisite.csv
 - `$(@D)` is especially useful to run `mkdir -p $(@D)` (making the output folder for the file);
 
 ## Conditionals
-You can write if/else if/else statements in makefiles, to control if some makefile is
+You can write if/else if/else statements in makefiles, to control if some part of the makefile is evaluated or not. An example:
+
+```makefile
+conditional_file: some_prereq.py
+    ifeq $(py_ver) '3.11'
+    python3.11 some_prereq.py
+    else ifeq $(p_ver) '3.10'
+    python3.10 some_prereq.py
+    endif
+```
+
+The relevant part of the `make` manual [can be found here](https://www.gnu.org/software/make/manual/html_node/Conditionals.html)
 
 ## Functions
 `make` provides functions to mainly manipulate the names of targets so that writing makefiles is more ergonomic. Functions look like variable calls, of the form `$(fun_name ARG,ARG,ARG)`. Almost all functions can be used on lists of space-separated values.
