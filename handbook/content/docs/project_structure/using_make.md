@@ -78,7 +78,7 @@ conditional_file: some_prereq.py
     endif
 ```
 
-The relevant part of the `make` manual [can be found here](https://www.gnu.org/software/make/manual/html_node/Conditionals.html)
+The relevant part of the `make` manual [can be found here](https://www.gnu.org/software/make/manual/html_node/Conditionals.html).
 
 ## Functions
 `make` provides functions to mainly manipulate the names of targets so that writing makefiles is more ergonomic. Functions look like variable calls, of the form `$(fun_name ARG,ARG,ARG)`. Almost all functions can be used on lists of space-separated values.

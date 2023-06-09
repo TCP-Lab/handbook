@@ -57,7 +57,7 @@ The handbook is written in GitHub-flavoured Markdown:
 
 Note that Github's markdown is used everywhere - in `.md` files, in comments, issues, pull requests, etc...
 
-Links are written as `[link text](link)`. Links to pages in the handbook must be given relative to the root of the website, which is `/docs/` for mort pages. So, a link could look like:
+Links are written as `[link text](link)`. Links to pages in the handbook must be given relative to the root of the website, which is `/docs/` for most pages. So, a link could look like:
 
 ```
 [click me!](/docs/project_structure/using_make.md)
