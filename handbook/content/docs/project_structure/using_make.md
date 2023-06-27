@@ -175,3 +175,41 @@ Docker is the perfect complement to make. Docker ships the environment and make 
     ```
 
 - Remember to bind the appropriate input/output folders when executing the docker so that `make` saves the files on the disk.
+
+## Using flexible PHONY and ALL targets
+To declare phony targets, you have to list them in `PHONY`. But you may have all of them scattered throughout your file, and you might add or remove them frequently.
+To avoid updating the same line over an over again, you can create a variable (e.g. `PHONY`, without the dot), and append your phony targets to it. At the end of the makefile, you can just do `.PHONY = $(PHONY)`:
+```makefile
+
+PHONY += clean
+clean:
+    rm -rf ./data
+
+PHONY += all
+all: ./data/my_file
+    touch $@
+
+.PHONY = $(PHONY)
+```
+
+Similarly, you can do the same with `all` to specify an easily modifiable list of default targets:
+```makefile
+
+ALL += file_one
+file_one:
+    touch $@
+
+ALL += file_two
+file_two:
+    touch $@
+
+all: $(ALL)
+
+# You have to set `all` to be PHONY
+.PHONY = all
+
+# Since all is defined at the bottom, we need to make it default:
+.DEFAULT_GOAL = all
+```
+
+Read [the manual for `.DEFAULT_GOAL`](https://www.gnu.org/software/make/manual/html_node/How-Make-Works.html), [the page for growing variables with `+=`](https://www.gnu.org/software/make/manual/html_node/Appending.html).
