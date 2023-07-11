@@ -24,3 +24,13 @@ This page is still a draft because I'm still writing it.
 ## Aim
 This page aims to collect every concept useful to keep in mind while writing python: from code style, to documentation, to best practices.
 
+## The tips
+
+- Follow a code style. Automatic formatters like [`black`](https://github.com/psf/black) are your friend. You can have a [pre-commit hook](https://pre-commit.com/) to automatically format your code before committing it. This ensures you are compliant, and you can just forget about it.
+  A code style gives you ac consistency in your code, and makes it easier to read. It also makes it easier to collaborate with other people, with less git conflicts.
+- Use type hints. They make life so much easier. Some IDEs can even use them to provide autocompletion, and provide a (sort of) static analysis of your code. Read more about them [here](https://docs.python.org/3/library/typing.html).
+  Dynamic typing is a mistake, and is [generally frowned upon in most civilized societies](https://www.youtube.com/watch?v=vfewyAHeTYw).
+- Write docstrings. They are the best way to document your code. They are also used by some IDEs to provide extra help on autocompletion. Read more about them [here](https://www.python.org/dev/peps/pep-0257/).
+  If you write them well, you can use `sphinx` to automagically generate documentation for your code. Read more about it [here](https://www.sphinx-doc.org/en/master/).
+- Use `isort` to sort your imports. It is a great tool that can be used as a pre-commit hook. It will sort your imports in a consistent way, and will group them in sections. Read more about it [here](https://pycqa.github.io/isort/). If you also use `black`, use `isort --profile black` to make sure the imports are sorted in the same way as `black` would format them. If you don't, the two tools will fight each other. Read more [here](https://pycqa.github.io/isort/docs/configuration/black_compatibility.html).
+  This means more consistent code, and less git conflicts.
