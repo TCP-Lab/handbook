@@ -11,4 +11,3 @@ bookCollapseSection: true
 These pages do not really fit anywhere else.
 
 ## The Index
-- [Containerizing with Docker](/docs/miscellaneous/containerizing.md): How to use Docker and Containers to allow better code reuse and reproducibility.

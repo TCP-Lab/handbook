@@ -2,16 +2,13 @@
 title: "Python Snippets"
 weight: 1
 desc: "Useful, copy-pastable python snippets and how to use them."
+draft: false
 ---
 
 # Python Snippets
 *Useful, copy-pastable python snippets and how to use them.*
 
-![Draft](https://img.shields.io/badge/status-draft-red?style=flat-square)
-
-{{< hint warning >}}
-This page is still a draft because I'm still writing it.
-{{< /hint >}}
+![Complete](https://img.shields.io/badge/status-draft-red?style=flat-square)
 
 ## Aim
 This page lists some useful and copy-pastable snippets to keep handy when working with python.

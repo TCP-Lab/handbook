@@ -7,7 +7,7 @@ desc: "How to structure the filesystem of a bioinformatics project."
 # Structuring Bioinformatics Projects
 *How to structure the filesystem of a bioinformatics project.*
 
-![Draft](https://img.shields.io/badge/status-draft-red)
+![Ongoing](https://img.shields.io/badge/status-draft-red)
 
 {{< hint warning >}}
 This page is still a draft because I'm still writing it.
@@ -33,7 +33,7 @@ It can happen that the point of a project is to develop a tool, but it is not al
 By the definition above, as a bioinformatician on a project, you will most commonly deal with:
 - Input Data:
   - Raw Data from (wet) colleagues (e.g. images, `.csv`, `.xslx`, text files);
-  - Data from remote repositories (usually trough Application Programming Interfaces, APIs);
+  - Data from remote repositories (usually fetched trough Application Programming Interfaces, APIs);
 - Code:
   - Scripts, tools and similar programs that will need to run to produce some output data.
 - Output data:
@@ -88,7 +88,10 @@ We can structure `data/` to follow this mental schema:
 
 Volatile data can be stored in a temporary directory in `/tmp/`, since we do not care for its preservation on disk.
 
-The only issue is with size. Some analyses may 
+The only issue is with size. Some analyses may use a ton of data, so you cannot store it in the repository directly (see [here]() for GitHub's storage limits).
+If you are given large data, an option is to store it remotely, and download it on demand.
+For instance, uploading your data to [Zenodo](https://zenodo.org/) and downloading it on the fly on each machine makes your analysis both portable and highly reproducible.
+If you also make your data [FAIR](https://www.go-fair.org/fair-principles/), you get extra points, and the world will thank you.
 
 ### src/
 The 'source' or `src` directory contains code. It should contain *only* code, and nothing else.

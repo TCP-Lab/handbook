@@ -4,7 +4,7 @@
 title: "Python Tips" # The page title. Will show up in the index only
 weight: 1 # Pages with more weight will show up higher in the index. Pages with the same weight are ordered alphabetically
 desc: "Tips and tricks to keep in mind when writing Python code." # The description to be used in the index files.
-draft: true # If this is true, the page will not be included in the live site or the indexes.
+draft: false # If this is true, the page will not be included in the live site or the indexes.
 
 # Optional:
 #bookCollapseSection: true # Will collapse other pages in this section. Useful in _index.md pages

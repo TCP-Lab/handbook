@@ -116,6 +116,10 @@ If you are drafting a brand-new page, include at the top of the page the status 
     ```markdown
     ![Draft](https://img.shields.io/badge/status-draft-red)
     ```
+- If the page is just an idea, and nothing is written in it, use the ![Idea](https://img.shields.io/badge/status-idea-lightgrey) tag.
+    ```markdown
+    ![Idea](https://img.shields.io/badge/status-idea-lightgrey)
+    ```
 
 If you don't want draft pages to show up in the website at all, add the `draft: true` variable in the page's YAML header (see the [TEMPLATE](/TEMPLATE.md) file).
 

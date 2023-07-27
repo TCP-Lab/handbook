@@ -2,12 +2,13 @@
 title: "Version Control"
 weight: 1
 desc: "How to use `git` and `github` to version control code and papers"
+draft: true
 ---
 
 # Version Control
 *How to use `git` and `github` to version control code and papers.*
 
-![Draft](https://img.shields.io/badge/status-draft-red)
+![Idea](https://img.shields.io/badge/status-idea-lightgrey)
 
 {{< hint warning >}}
 This page is still a draft because I'm still writing it.

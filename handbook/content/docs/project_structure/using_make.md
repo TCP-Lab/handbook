@@ -31,6 +31,12 @@ This is tremendously useful when running complex analyses, and brings a whole bu
 
 A lot of pages in the handbook are written with `make` automation in mind.
 
+## Alternatives to make
+If you just want a single entrypoint for a series of disconnected scripts, you probably want [`just`](https://github.com/casey/just).
+It's similar to `make` in spirit, but is much more streamlined for that use-case.
+
+If you feel you need something more structured, you can take a look at [workflow managers](docs/code/workflow_managers.md), like [`nextflow`](https://www.nextflow.io/).
+
 ## When you should write makefiles
 You should write a makefile and update it very early in the project. It would be best to stop running steps manually (except when debugging) and instead add rules to the makefile and invoke `make` every time.
 

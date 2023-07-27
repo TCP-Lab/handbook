@@ -7,7 +7,7 @@ desc: "How to (quickly) write neat, clean command line tools in Python."
 # Making Python command-line tools
 *How to (quickly) write neat, clean command line tools in Python.*
 
-![Draft](https://img.shields.io/badge/status-draft-red)
+![Ongoing](https://img.shields.io/badge/status-draft-red)
 
 {{< hint warning >}}
 This page is still a draft because I'm still writing it.

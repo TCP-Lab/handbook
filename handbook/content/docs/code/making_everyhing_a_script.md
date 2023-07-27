@@ -2,12 +2,13 @@
 title: "Making Everything a Script"
 weight: 1
 desc: "How to convert loose scripts into reusable scripts."
+draft: true
 ---
 
 # Modularizing everything
 *How to convert loose scripts into reusable scripts.*
 
-![Draft](https://img.shields.io/badge/status-draft-red)
+![Idea](https://img.shields.io/badge/status-idea-lightgrey)
 
 {{< hint warning >}}
 This page is still a draft because I'm still writing it.
