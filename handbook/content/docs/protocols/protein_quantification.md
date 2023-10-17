@@ -51,80 +51,94 @@ one with the recorded data of the samples.
 
 # Materials
 - Biological Source:
+  - Name: Protein Sample Solution
   - Starting Material: Any protein suspension
   - Strain/Genotype: Any
-  - Amount of Material: At least $100 \mul$ to each test tube
+  - Amount of Material: At least 100 μl for each sample.
   - Storage: No sample storage is required.
 
-- Prepared Reagent: Phosphate-Buffered Saline Buffer
-  - Name: Phosphate-Buffered Saline Buffer
-  - Abbreviation: PBS
-  - Required: Yes 
-  - Recipe ID: [BUFF-001](https://example.org/)
-  - Required Amount: At least 500 ml.
-  - Modifications: Must be used cold, around 4 C.
-
-- prepared reagent: bovine serum albumin 2mg/ml solution
-  - Name: Bovine serum albumin 2mg/ml solution
+- Prepared Reagent:
+  - Name: Bovine serum albumin 1 mg/ml solution
   - Abbreviation: BSA
   - Required: Yes 
   - Recipe ID: [SOL-001](https://example.org/)
-  - Required Amount: 10 ulu
+  - Required Amount: 10 μl
   - Modifications: None
 
-- Raw Reagent: RIPA Lysis Buffer
-  - Name: Radio-Immunoprecipitation assay (RIPA) Lysis Buffer
-  - Abbreviation: RIPA
-  - Manufacturer: ThermoFisher Scientific
+- Raw Reagent:
+  - Name: Coomassie Brilliant Blue R 250 solution
+  - Abbreviation: CBlue
+  - Manufacturer: Sigma Aldrich
   - Required: Yes
-  - Required Amount: 50 ul per MW6 well, 150 ul per p58 well.
+  - Required Amount: 1 ml per every sample (or every sample dilution) plus 5 ml.
   - Potential Substitutions: None
 
 # Required Laboratory Equipment
 This protocol requires:
-- Micropipette of 1-50 ul with tips;
-- Micropipette of 100-1000 ul with tips;
+- Micropipette of 1-50 μl with micropipette tips;
+- Micropipette of 100-1000 μl with tips;
 - Sonicator;
 - Spectrophotometer with clean cuvettes, one cuvette per sample plus 6;
 - High-speed centrifuge;
 - Vortexer;
 - Small Eppendorf vials;
-- Ice;
-- Ice bath;
+- Crushed Ice and Ice box;
 
 # Methods
-
 ## Reagent preparation
-Prepare PBS following the recipe. Store at 4 degrees Celsius for at least 5
-hours before use. Always use cold PBS in all steps of the procedure.
-
 Prepare 5 dilutions of BSA. In different eppendorf vials stored in a bath of 
 crushed ice, combine the following:
-- 10 ug: 90 ul of distilled water and 10 ul of BSA (2mg/ml);
-- 5 ug: 50 ul of distilled water plus 50 ul of the previous solution;
-- 2.5 ug: 50 ul of distilled water plus 50 ul of the previous solution;
-- 1.25 ug: 50 ul of distilled water plus 50 ul of the previous solution;
-- 0 ug: 100 ul of distidde water. This sample will be referred to as the "blank".
+- 10 ug/ml: 90 ul of distilled water and 10 ul of BSA (1mg/ml);
+- 5 ug/ml: 50 ul of distilled water plus 50 ul of the previous solution;
+- 2.5 ug/ml: 50 ul of distilled water plus 50 ul of the previous solution;
+- 1.25 ug/ml: 50 ul of distilled water plus 50 ul of the previous solution;
+- 0 ug/ml: 100 ul of distilled water. This sample will be referred to as the "blank".
+
+Label the 0 ug/ml vial as "blank".
+Label all other vials as `BSA - ` followed by the known concentration.
 
 Store all prepared solutions at 4 C. Store BSA solutions for up to 12 hours.
 
 ## Sample preparation
-If starting with plated cells, 
+No sample preparation is strictly necessary. If samples are expected to be highly
+concentrated, prepare dilutions of each sample:
+- x1: Add 100 ul of the sample;
+- x0.5: Take 50 ul of the previous dilution and add 50 ul of distilled water;
+- x0.25: Take 50 ul of the previous dilution and add 50 ul of distilled water;
+- x0.125: Take 50 ul of the previous dilution and add 50 ul of distilled water;
+
+Label all of these vials with the respective dilutions.
+Store all prepared solutions at 4 C.
 
 ## Procedure
-### Day 1
-> *"Add 5 ul of reagent BBB to every sample. Pipette at least three time for 
-through mixing. Incubate overnight at 4 degrees Celsius."*
+- Add 1 ml of CBlue to every sample dilution and every BSA dilutions as well as
+  the blank solution.
+- Close and vortex each vial to mix well.
+- Turn on the spectrophotometer and set the wavelength to 595 nanometers;
+- Move the blank solution to a cuvette and insert it in the spectrophotometer.
+- Tare the spectrophotometer.
+- Measure each sample and each BSA solution and write down the measured absorbance.
+- Discard all measured samples.
+- Fit a linear model on the BSA known concentrations.
+- Compute concentrations based on this fitted line.
 
-### Day 2
-> *"Take samples from incubator and vortex at high-speed in a high-speed centrifuge
-for 3 minutes at 4000 RPM.
-Remove surnatant by pipetting to vacuum.
-Add 3 ul of reagent CCC to each sample. Incubate overnight."*
+## Output Data
+Record all measurements in a `.csv` file with the following columns:
+- `sample_id`: The label on the sample. E.g., `BSA - 10 ug/ml`, `sample_x1`
+- `absorbance`: The absorbance value for that sample.
+- `computed_concentration`: The computed absorbance concentration.
 
-### Day 3
-> *Do all other steps. Measure at spectrofotometer at wavelenght 400 nm.*
+If more sample metadata is available (e.g. sample ID of origin), add more
+columns as needed to store all metadata information.
+
+Name the file as `yyyy_mm_dd_computed_concentrations_<id>.csv` with a meaningful
+identifier (in place of `<id>`) of the experiment.
+
+## Necessary Data and Metadata
+- Operator Metadata;
+- Type and model of spectrophotometer;
+- Output file name.
 
 # Changelog
 This section records all changes to this protocol:
-- [2023-01-01] (Name, Surname): Changed ...
+- [2023-10-17] (Luca, Visentin) [1.0]: Released.
