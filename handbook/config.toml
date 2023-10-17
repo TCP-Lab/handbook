@@ -1,5 +1,5 @@
-baseURL = 'https://biohandbook.me/'
-title = 'The Handbook'
+baseURL = 'https://TCP-Lab.github.io/'
+title = 'TCP-Lab Handbook'
 
 # Book configuration
 disablePathToLower = true
