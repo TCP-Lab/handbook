@@ -1,9 +1,10 @@
 ---
 title: "Protein Quantification"
 weight: 10
+draft: false
 ---
 
-# Protein Quantification - Microplate
+# Protein Quantification
 ![Version Badge](https://img.shields.io/badge/Version-0.1-blue)
 ![Validation Badge](https://img.shields.io/badge/Validation-Unvalidated-red)
 ![Date Badge](https://img.shields.io/badge/Released-2023--10--12-blue)
@@ -13,16 +14,8 @@ This protocol can be used to quantify the amount of protein in a sample.
 It is know as the Bradford Protein Assay.
 
 ## Contributors
-The following contributors have created this record:
-- Luca Visentin - [0000-0003-2568-5694](https://orcid.org/0000-0003-2568-5694);
+- Creator: Luca Visentin - [0000-0003-2568-5694](https://orcid.org/0000-0003-2568-5694);
 
-The following contributors have edited or reviewed this record:
-- None
-
-The following contributors have validated this record:
-- None
-
-## Provenance
 This protocol was adapted from an in-house version by Giorgia Chinigo' ([0000-0002-3772-178X](https://orcid.org/0000-0002-3772-178X)).
 
 ## License
@@ -45,37 +38,22 @@ Strong detergents like Sodium Dodecyl Sulfate may interfere with the assay.
 ## Timeframe
 The essay takes about two hours, all in one sitting.
 
-## Generated data
-Produces two tabular files: one with the absorbance of the calibration curve and
-one with the recorded data of the samples.
+## Inputs and outputs
 
-# Materials
-- Biological Source:
-  - Name: Protein Sample Solution
+### Input(s)
+- Protein Sample Solution
   - Starting Material: Any protein suspension
   - Strain/Genotype: Any
   - Amount of Material: At least 100 μl for each sample.
   - Storage: No sample storage is required.
 
-- Prepared Reagent:
-  - Name: Bovine serum albumin 1 mg/ml solution
-  - Abbreviation: BSA
-  - Required: Yes 
-  - Recipe ID: [SOL-001](https://example.org/)
-  - Required Amount: 10 μl
-  - Modifications: None
+### Output(s)
+Produces two tabular files: one with the absorbance of the calibration curve and
+one with the recorded data of the samples.
 
-- Raw Reagent:
-  - Name: Coomassie Brilliant Blue R 250 solution
-  - Abbreviation: CBlue
-  - Manufacturer: Sigma Aldrich
-  - Required: Yes
-  - Required Amount: 1 ml per every sample (or every sample dilution) plus 5 ml.
-  - Potential Substitutions: None
-
-# Required Laboratory Equipment
+# Required Equipment
 This protocol requires:
-- Micropipette of 1-50 μl with micropipette tips;
+- Micropipette of 1-10 μl with tips;
 - Micropipette of 100-1000 μl with tips;
 - Sonicator;
 - Spectrophotometer with clean cuvettes, one cuvette per sample plus 6;
@@ -83,6 +61,24 @@ This protocol requires:
 - Vortexer;
 - Small Eppendorf vials;
 - Crushed Ice and Ice box;
+
+# Required Reagent
+- Bovine serum albumin 1 mg/ml solution
+  - Abbreviation: BSA
+  - Required: Yes 
+  - Recipe ID: [SOL-001](https://example.org/)
+  - Required Amount: 10 μl
+  - Modifications: None
+  - Storage: Refrigerated at 4 C.
+  - Potential Substitutions: None
+
+- Coomassie Brilliant Blue R 250 solution
+  - Abbreviation: CBlue
+  - Manufacturer: Sigma Aldrich
+  - Required: Yes
+  - Required Amount: 1 ml per every sample (or every sample dilution) plus 5 ml.
+  - Storage: Refrigerated at 4 C.
+  - Potential Substitutions: None
 
 # Methods
 ## Reagent preparation
@@ -132,13 +128,14 @@ If more sample metadata is available (e.g. sample ID of origin), add more
 columns as needed to store all metadata information.
 
 Name the file as `yyyy_mm_dd_computed_concentrations_<id>.csv` with a meaningful
-identifier (in place of `<id>`) of the experiment.
+identifier of the experiment in place of `<id>`.
 
 ## Necessary Data and Metadata
-- Operator Metadata;
+- Operator Metadata (name, orcid);
 - Type and model of spectrophotometer;
 - Output file name.
 
 # Changelog
 This section records all changes to this protocol:
 - [2023-10-17] (Luca, Visentin) [1.0]: Released.
+
